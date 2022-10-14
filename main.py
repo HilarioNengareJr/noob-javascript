@@ -12,5 +12,9 @@ def var():
     return render_template('variables.html')
 
 
+@app.route('/function')
+def funcs():
+    return render_template("functions.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
