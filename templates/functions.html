@@ -8,7 +8,7 @@
 
 <form style="margin:10%;">
     <input type="button" value="Alert" onclick="alertMe()"
-           style=" background:blue; color:#fff;border: 1px solid blue; border-radius:50px 25px; font-size:22px">
+           style=" background:blue; color:#fff;border: 1px solid blue; border-radius:5px 2.5px; font-size:22px;">
 </form>
 
 <script type="text/javascript">
@@ -25,7 +25,22 @@ function alertMe(){
     alert("The answer is " + x)
 }
 
+//calling a function from another function
 
+function doFirst(){
+    document.write(" I am first bro! ")
+}
+
+function doSecond(){
+    document.write(" I am second bro! ")
+}
+
+function callFirstAndSecond(){
+    doFirst()
+    doSecond()
+}
+
+callFirstAndSecond()
 </script>
 </body>
 </html>
